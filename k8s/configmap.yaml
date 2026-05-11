@@ -1,0 +1,36 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-index-html
+  namespace: portfolio-lab
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <title>Kubernetes Portfolio Lab</title>
+      <style>
+        body {
+          font-family: Arial;
+          background: #eff6ff;
+          padding: 40px;
+        }
+
+        .card {
+          background: white;
+          padding: 24px;
+          border-radius: 18px;
+          max-width: 720px;
+          margin: auto;
+          box-shadow: 0 12px 40px #0002;
+        }
+      </style>
+    </head>
+    <body>
+      <div class="card">
+        <h1>Kubernetes Nginx Rollout Lab</h1>
+        <p>This page is served by Nginx running on Minikube.</p>
+        <p>Skills: Deployment, Service, ConfigMap, Scale, Rollout, Rollback.</p>
+      </div>
+    </body>
+    </html>

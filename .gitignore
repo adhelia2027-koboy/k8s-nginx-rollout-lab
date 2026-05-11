@@ -1,0 +1,65 @@
+# =========================
+# Environment files
+# =========================
+.env
+.env.*
+*.env
+
+# =========================
+# Logs
+# =========================
+*.log
+logs/
+
+# =========================
+# Temporary files
+# =========================
+*.tmp
+*.bak
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# =========================
+# Secrets and credentials
+# Do not commit passwords, tokens, keys, or credentials
+# =========================
+secrets/
+secret.yaml
+*-secret.yaml
+credentials
+credentials.*
+*.pem
+*.key
+id_rsa
+id_rsa.pub
+
+# =========================
+# Kubernetes local config
+# Do not commit local kubeconfig
+# =========================
+.kube/
+kubeconfig
+config
+
+# =========================
+# Cloud credentials
+# Do not commit cloud provider credentials
+# =========================
+.aws/
+.gcp/
+azure/
+service-account*.json
+*-service-account.json
+
+# =========================
+# Editor / IDE folders
+# =========================
+.vscode/
+.idea/
+
+# =========================
+# OS generated files
+# =========================
+*.Zone.Identifier
